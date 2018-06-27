@@ -7,7 +7,7 @@ public class Driver {
         Ship[] ships = new Ship[10];
 
 
-        for(int i=0;i<ships.length;i++){
+        for(int i=2;i<ships.length;i++){
             ships[i] = new Ship();
         }
         ships[0] = new CruiseShip();
