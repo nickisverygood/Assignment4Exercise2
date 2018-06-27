@@ -8,4 +8,18 @@ public class CruiseShip extends Ship {
     String numberofcranes;
     String services [];
     String cruisetype;
+
+    @Override
+    public boolean engineSwitch() {
+        if(this.engineOn) {
+            engineOn = false;
+            System.out.print("CruiseShip Engine Turned Off!\n");
+        }else {
+            engineOn = true;
+            System.out.print("CruiseShip Engine Turned On!\n");
+        }
+        return engineOn;
+
+    }
 }
+

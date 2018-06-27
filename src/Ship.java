@@ -15,6 +15,17 @@ public class Ship {
     String departingport;
     String arrivalport;
     String owner;
+    boolean engineOn = false;
 
+    public boolean engineSwitch() {
+        if(this.engineOn) {
+            engineOn = false;
+            System.out.print("Ship Engine Turned Off!\n");
+        }else {
+            engineOn = true;
+            System.out.print("Ship Engine Turned On!\n");
+        }
+        return engineOn;
 
+    }
 }
